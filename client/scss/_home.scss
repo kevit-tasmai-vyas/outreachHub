@@ -10,9 +10,14 @@
   border-radius: 12px;
   background-image: url("../../assets/images/outreach_hub_welcome_box_background.png");
   background-size: cover;
+  background-position: center;
+  box-shadow: $shadow;
   color: black;
   text-align: center;
  
+}
+.welcome-text {
+  max-width: 1500px;
 }
 
 .container {
@@ -25,6 +30,7 @@
 
 .welcome-box h1 {
   margin-bottom: 5px;
+  color: black;
 }
 
 .welcome-logo {
