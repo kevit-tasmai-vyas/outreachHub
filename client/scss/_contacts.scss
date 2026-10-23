@@ -226,3 +226,17 @@ h3,
     }
   }
 }
+.contact-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-photo-big {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}

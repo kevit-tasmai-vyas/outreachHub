@@ -1,15 +1,18 @@
 import express from "express";
 import cors from "cors";
 import { config } from "dotenv";
-import connectDB from "../server/config/db.js";
+import connectDB from "./config/db.js";
+import authRoutes from "./routes/authRoutes.js"
 
 config();
 connectDB();
 
 const app = express();
-
 app.use(cors());
-app.use(express());
+app.use(express.json());
+app.use("/api/auth", authRoutes);
+
+
 
 // test route
 app.get("/", (req, res) => {
@@ -17,7 +20,6 @@ app.get("/", (req, res) => {
 });
 
 // routes will be added here later
-// app.use("/api/auth", require("./routes/authRoutes"));
 // app.use("/api/contacts", require("./routes/contactRoutes"));
 
 const PORT = process.env.PORT || 5000;
