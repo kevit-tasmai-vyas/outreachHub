@@ -490,6 +490,12 @@ h3 {
   border: 1px solid white;
 }
 
+.error-message {
+  color: #ae2012;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
 @media (min-width: 576px) {
   .login-box {
     padding: 40px;
